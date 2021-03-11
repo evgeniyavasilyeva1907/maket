@@ -1,0 +1,24 @@
+.content{
+    background-color: blue;
+    width: 370px;
+  
+}
+.infoLabel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.boldText{
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.text{
+    font-family: 'Arimo', sans-serif;
+    font-size: 12px;
+}
+.infoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

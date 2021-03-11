@@ -16,6 +16,7 @@
     margin: auto;
     justify-content: space-between;
     margin-top: 10px;
+    margin-bottom: 40px;
 }
 .header h3{
     font-family: 'Poppins', sans-serif;
@@ -51,14 +52,16 @@
 .header nav ul li a{
     text-decoration: none;
     color: #3E4A56;
-    font-family: 'Arimo', sans-serif;
+    font-family:'Arimo', sans-serif;
     font-size: 14px;
+    font-weight: bold;
 }
 .personInfo{
     display: inherit;
     color: #3E4A56;
     font-family: 'Arimo', sans-serif;
     font-size: 14px;
+    font-weight: bold;
     align-items: center;
     width: 159px;
     justify-content: space-between;
