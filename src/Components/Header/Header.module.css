@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.header h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #3E4A56;
+}
+.header input{
+    outline: none;
+    border: #E7EAEE solid 0.5px;
+    height: 32px;
+    width: 475px;
+    border-radius: 5px;
+}
+.header nav{
+    width: 282px;
+    height: 34px;
+}
+.header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.header nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: #3E4A56;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+}
+.personInfo{
+    display: inherit;
+    color: #3E4A56;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    align-items: center;
+    width: 159px;
+    justify-content: space-between;
+}
+.personInfo button{
+    border:none;
+    background: none;
+    color: #3E4A56;
+    cursor: pointer;
+}
