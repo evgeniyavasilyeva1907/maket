@@ -10,17 +10,20 @@ const Header = () => {
                 <div><img src={logo} alt='logo'></img></div>
                 <h3>Jasper</h3>
             </div>
-            <input placeholder="שופיח"></input>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">םישמתשמ לוהינ</a>
-                        </li>
-                        <li>
-                            <a href="#">תוחתפמו עדימ לוהינ</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div className={style.inputGroupe}>
+                <button>שופיח <i className="fas fa-search"></i></button>
+                <input></input>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">םישמתשמ לוהינ</a>
+                    </li>
+                    <li>
+                        <a href="#">תוחתפמו עדימ לוהינ</a>
+                    </li>
+                </ul>
+            </nav>
             <div className={style.personInfo}>
                 <div><img src={avatar} alt='avatar'></img></div>
                 <div>ילארשי לארשי</div>

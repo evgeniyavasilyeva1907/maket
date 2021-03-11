@@ -23,12 +23,30 @@
     font-size: 18px;
     color: #3E4A56;
 }
+.inputGroupe{
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    overflow: hidden;
+    border:#E7EAEE solid 0.5px;
+    min-width:475px ;
+    display: flex;
+    flex-direction: row;
+}
 .header input{
     outline: none;
-    border: #E7EAEE solid 0.5px;
     height: 32px;
-    width: 475px;
-    border-radius: 5px;
+    width: 85%;
+    border: none;
+}
+.header button {
+    width: 15%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    height: 32px;
+    background-color: #FFFFFF;
+    color: #939CAA;
 }
 .header nav{
     width: 282px;
