@@ -47,6 +47,8 @@
     height: 32px;
     background-color: #FFFFFF;
     color: #939CAA;
+    font-family:'Arimo', sans-serif;
+    font-size: 14px;
 }
 .header nav{
     width: 282px;

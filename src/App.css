@@ -43,3 +43,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.MuiPaper-elevation4 {
+  box-shadow: none
+}

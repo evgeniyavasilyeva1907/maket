@@ -1,0 +1,26 @@
+.firstInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 29px;
+}
+.textNumber{
+    border-left: 1px solid #E7EAEE;
+    width: 25%;
+}
+.textNumberLast{
+    width: 25%;
+}
+.firstInfo .text{
+    font-family:'Arimo', sans-serif;
+    font-size: 12px;
+    color: #54585E;
+    text-align: center;
+}
+.firstInfo .number{
+    margin-top: 12px;
+    text-align: center;
+    font-family:'Arimo', sans-serif;
+    font-size: 14px;
+    color: #1F2022;
+}

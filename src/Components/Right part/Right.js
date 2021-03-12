@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Right.module.css';
-import emblem from '../../img/Emblem.png'
+import emblem from '../../img/Emblem.png';
+import SimpleTabs from '../Right part/TabPanel/SimpleTabs'
 
 const Right = () => {
     return (
@@ -12,7 +13,7 @@ const Right = () => {
                     <div className={style.text}>רלוג תילא גניסיפידא ררוטקסנוק ,טמא טיס <br/> רולוד םוספיא םרול</div>
                 </div>
             </div>
-            
+            <SimpleTabs/>
         </div>
     )
 }
