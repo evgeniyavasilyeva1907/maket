@@ -23,10 +23,21 @@ const FirstTab = () => {
                 </div>
             </div>
             <div className={style.secondInfo}>
-                
+                <div className={style.text}> רדחה חתפמ</div>
+                <div> <input defaultValue='םינויד םע ן"סר - L201'></input></div>
             </div>
+            <div className={style.thirdInfo}>
+                <div className={style.text}> רדחה חתפמ</div>
+                <div>
+                    <select defaultValue='םינויד םע ן"סר - L201'>
+                        <option defaultValue='first'> דרשמ</option>
+                        <option defaultValue='second'> דרשמ</option>
+                        <option defaultValue='third'> דרשמ</option>
+                    </select></div>
+            </div>
+
         </div>
- )
+    )
 }
 
 export default FirstTab
