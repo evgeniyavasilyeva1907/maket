@@ -21,7 +21,7 @@ function TabPanel(props) {
             {...other}
         >
             {value === index && (
-                <div style={{backgroundColor:'#fff'}}>
+                <div style={{backgroundColor:'#fff', paddingBottom:'15px'}}>
                     {children}
                 </div>
             )}
@@ -106,7 +106,7 @@ export default function SimpleTabs() {
             </StyledAppBar>
 
 
-            <TabPanel value={value} index={0} root={{backgroundColor: '#ffffff'}}>
+            <TabPanel value={value} index={0}>
                 <FirstTab/>
             </TabPanel>
             <TabPanel value={value} index={1}>

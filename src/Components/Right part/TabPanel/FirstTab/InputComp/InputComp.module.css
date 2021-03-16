@@ -1,0 +1,32 @@
+.text{
+    font-family:'Arimo', sans-serif;
+    font-size: 12px;
+    color: #54585E;
+    text-align: center;
+}
+.inputStyle{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin:  auto;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #E7EAEE;
+    margin-bottom: 10px;
+    font-family:'Arimo', sans-serif;
+    font-size: 14px;
+    color: #1F2022;
+}
+
+input{
+    width: 200px;
+    border: 1px solid #E7EAEE;
+    height: 32px;
+    border-radius: 5px;
+    color: #1F2022;
+    font-family:'Arimo', sans-serif;
+    font-size: 14px;
+    padding-right: 10px;
+    outline: none;
+   
+}

@@ -1,3 +1,8 @@
+.content {
+    width: 340px;
+    margin: auto;
+}
+
 .firstInfo {
     display: flex;
     flex-direction: row;
@@ -35,7 +40,7 @@
     border-top: 1px solid #E7EAEE;
     margin-bottom: 10px;
 }
-.secondInfo input{
+input{
     width: 200px;
     border: 1px solid #E7EAEE;
     height: 32px;
@@ -59,7 +64,8 @@
         display: flex;
         align-items: center;
     }
-.thirdInfo {
+
+.forthInfo{
     display: flex;
     justify-content: space-between;
     width: 340px;
@@ -67,15 +73,37 @@
     align-items: center;
     padding-top: 10px;
     border-top: 1px solid #E7EAEE;
+    margin-bottom: 10px;
 }
-.thirdInfo select {
-    width: 200px;
-    border: 1px solid #E7EAEE;
-    height: 32px;
-    border-radius: 5px;
-    color: #1F2022;
+.fivethInfo{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin:  auto;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #E7EAEE;
+    margin-bottom: 10px;
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 10px;
+}
+ .fivethInfo .text{
     font-family:'Arimo', sans-serif;
-    font-size: 14px;
-    padding-right: 10px;
-    outline: none;
+    font-size: 12px;
+    color: #54585E;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+.check {
+    padding-top: 10px;
+    border-top: 1px solid #E7EAEE;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.check .text{
+    padding-right: 15px;
 }
