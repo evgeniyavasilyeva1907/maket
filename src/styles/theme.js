@@ -1,9 +1,8 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 export default createMuiTheme({
-   
-    palette: {
 
+    palette: {
     },
     overrides: {
         MuiCheckbox: {
@@ -15,36 +14,61 @@ export default createMuiTheme({
                     backgroundColor: '#fff !important',
                 }
             },
-            root:{
+            root: {
                 color: '#fff',
-                
             }
-
         },
-        PrivateSwitchBase:{
-            root:{
+        PrivateSwitchBase: {
+            root: {
                 padding: 0
             }
         },
-        MuiIconButton:{
-            root:{
+        MuiIconButton: {
+            root: {
                 borderRadius: 'none',
                 color: 'none'
             },
-            colorSecondary:{
+            colorSecondary: {
                 color: 'none',
-                '&:hover':{
+                '&:hover': {
                     backgroundColor: '#fff'
                 }
             }
         },
-        
+        MuiTabs: {
+            root:{
+                height: '40px'
+            },
 
-        MuiLink: {
-            underlineHover: {
-                '&:hover': {
-                    textDecoration: 'none'
+            flexContainer: {
+                justifyContent: 'space-between'
+            }
+        },
+        MuiAppBar: {
+            colorPrimary: {
+                backgroundColor: '#F0F4F9'
+            }
+        },
+        MuiTab:{
+            root:{
+                backgroundColor: '#DEE4EB',
+                width:"183px",
+                borderRadius:'5px 5px 0 0',
+                '&.Mui-selected':{
+                    backgroundColor: '#FFF',
+                    color:'#54585E'
                 }
+            },
+            textColorInherit:{
+                color: '#939CAA',
+                opacity: 1
+            },
+            wrapper:{
+                display: 'flex',
+                flexDirection: 'row'
+            },
+            labelIcon:{
+                minHeight: 'none'
             }
         }
     }

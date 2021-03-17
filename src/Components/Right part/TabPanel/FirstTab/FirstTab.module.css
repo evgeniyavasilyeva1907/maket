@@ -83,9 +83,7 @@ input{
     align-items: center;
     padding-top: 10px;
     border-top: 1px solid #E7EAEE;
-    margin-bottom: 10px;
 }
-
 
  .fivethInfo .text{
     font-family:'Arimo', sans-serif;
@@ -103,4 +101,7 @@ input{
 }
 .check .text{
     padding-right: 15px;
+}
+.information{
+    height: 138px;
 }

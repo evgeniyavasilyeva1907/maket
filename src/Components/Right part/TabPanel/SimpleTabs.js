@@ -4,9 +4,9 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import PowerIcon from '@material-ui/icons/Power';
-import style from './SimpleTabs.module.css';
-import FirstTab from './FirstTab/FirstTab'
+import FirstTab from './FirstTab/FirstTab';
+import PowerOutlinedIcon from '@material-ui/icons/PowerOutlined';
+import LayersOutlinedIcon from '@material-ui/icons/LayersOutlined';
 
 
 function TabPanel(props) {
@@ -21,7 +21,7 @@ function TabPanel(props) {
             {...other}
         >
             {value === index && (
-                <div style={{backgroundColor:'#fff', paddingBottom:'15px'}}>
+                <div style={{ backgroundColor: '#fff', paddingBottom: '15px' }}>
                     {children}
                 </div>
             )}
@@ -52,15 +52,15 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const StyledAppBar = withStyles({
+/*const StyledAppBar = withStyles({
     root: {
         display: 'flex',
         justifyContent: 'space-between'
     }
 
-})(AppBar)
+})(AppBar)*/
 
-const StyledTab = withStyles({
+/*const StyledTab = withStyles({
     selected: {
         backgroundColor: "#fff"
     },
@@ -69,16 +69,16 @@ const StyledTab = withStyles({
         borderRadius: '5px 5px  0 0',
         
     }
-})(Tab)
+})(Tab)*/
 
-const StyledTabs = withStyles({
+/*const StyledTabs = withStyles({
     root: {
         backgroundColor: '#DEE4EB',
     },
     flexContainer: {
         justifyContent: "space-between"
     }
-})(Tabs)
+})(Tabs)*/
 
 
 export default function SimpleTabs() {
@@ -89,25 +89,19 @@ export default function SimpleTabs() {
         setValue(newValue);
     };
 
-    function Label () {
-        return(
-            <div className={style.leftTub}><PowerIcon/> תורעהו םינקת</div>
-        )
-    }
-
     return (
         <div className={classes.root}>
 
-            <StyledAppBar position="static"  elevation={0}>
-                <StyledTabs value={value} onChange={handleChange} aria-label="simple tabs example" TabIndicatorProps={{ style: { background: "none" } }}>
-                    <StyledTab label="רדחה ינותנ" {...a11yProps(0) } />
-                    <StyledTab label={<Label/>} {...a11yProps(1)} />
-                </StyledTabs>
-            </StyledAppBar>
+            <AppBar position="static" elevation={0}>
+                <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" TabIndicatorProps={{ style: { background: "none" } }}>
+                    <Tab label="רדחה ינותנ" icon={<LayersOutlinedIcon/>}  {...a11yProps(0)} />
+                    <Tab label="תורעהו םינקת" icon={<PowerOutlinedIcon />}{...a11yProps(1)} />
+                </Tabs>
+            </AppBar>
 
 
             <TabPanel value={value} index={0}>
-                <FirstTab/>
+                <FirstTab />
             </TabPanel>
             <TabPanel value={value} index={1}>
                 Item Two

@@ -18,16 +18,16 @@ export default class SimpleSlider extends Component {
             <div className={style.slider}>
                 <Slider {...settings}>
                     <div>
-                        <img src={plan} />
+                        <img src={plan} alt='first' />
                     </div>
                     <div>
-                        <img src={plan} />
+                        <img src={plan} alt='second'/>
                     </div>
                     <div>
-                        <img src={plan} />
+                        <img src={plan} alt='third' />
                     </div>
                     <div>
-                        <img src={plan} />
+                        <img src={plan} alt='forth'/>
                     </div>
                 </Slider>
             </div>

@@ -1,12 +1,10 @@
 import React from 'react';
-import style from './TextareaComp.module.css'
+import  './TextareaComp.module.css'
 
 function TextareaComp(props){
-    const {text} = props
+    const {text, className} = props
     return(
-        <div>
-            <textarea className={style} defaultValue={text} ></textarea>
-        </div>
+            <textarea  defaultValue={text} className={className}></textarea>
     )
 }
 
