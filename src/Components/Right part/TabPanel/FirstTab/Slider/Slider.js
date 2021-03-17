@@ -1,27 +1,36 @@
-import React from 'react';
-import Slider from 'infinite-react-carousel';
-import plan from '../../../../../img/plan.png'
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import plan from '../../../../../img/plan.png';
+import style from './Slider.module.css'
 
-function SimpleSlider()  {
-    
-    return (
-        <Slider dots centerMode={true} centerPadding={10}>
-            <div>
-                <img src={plan}></img>
-                
+export default class SimpleSlider extends Component {
+    render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        };
+        return (
+            <div className={style.slider}>
+                <Slider {...settings}>
+                    <div>
+                        <img src={plan} />
+                    </div>
+                    <div>
+                        <img src={plan} />
+                    </div>
+                    <div>
+                        <img src={plan} />
+                    </div>
+                    <div>
+                        <img src={plan} />
+                    </div>
+                </Slider>
             </div>
-            <div>
-                <h3>2</h3>
-            </div>
-            <div>
-                <h3>3</h3>
-            </div>
-            <div>
-                <h3>4</h3>
-            </div>
-        </Slider>
-    )
-
-};
-
-export default SimpleSlider
+        );
+    }
+}

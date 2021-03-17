@@ -49,9 +49,10 @@ const FirstTab = () => {
                     סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט ליבם
                     דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר'/>
                 <div className={style.slider}>
-                    <SimpleSlider />
                 </div>
             </div>
+            <SimpleSlider />
+
             <SelectComp mainLabel='ץוח \ םינפ' firstText='םינפ' secondText='םינפ' thirdText='םינפ' />
             <SelectComp mainLabel='רדחה גוויס' firstText='רודימ' secondText='רודימ' thirdText='רודימ' />
             <InputComp mainLabel='א"כ ןקת' value='2' />
@@ -66,7 +67,7 @@ const FirstTab = () => {
                 <CheckBoxComp />
                 <div className={style.text}>תונולח</div>
             </div>
-            <div className={style.mainInfo}> .סעבשי גיתל ?קרוב םגרומ יכתל - המשה םשתס ונכל דעתסו ךנברת .שמגמ ימרוגב ,ףחנומ קרוצ תחלו טיארב .קגלוס םביל </div>
+            <TextareaComp text='.סעבשי גיתל ?קרוב םגרומ יכתל - המשה םשתס ונכל דעתסו ךנברת .שמגמ ימרוגב ,ףחנומ קרוצ תחלו טיארב .קגלוס םביל '/>
             <InputComp mainLabel='(KW 0.1) למשח' value='' />
             <InputComp mainLabel='ריווא גוזימ' value='גוזימה ןנכתמ תטלחה י"פע' />
 
