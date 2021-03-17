@@ -21,7 +21,7 @@ function TabPanel(props) {
             {...other}
         >
             {value === index && (
-                <div style={{ backgroundColor: '#fff', paddingBottom: '15px' }}>
+                <div style={{ backgroundColor: '#fff', paddingBottom: '15px', borderRadius:'0 0 5px 5px' }}>
                     {children}
                 </div>
             )}
@@ -45,41 +45,11 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: '#DEE4EB',
     },
     elevation4: {
         boxShadow: 'none'
     }
 }));
-
-/*const StyledAppBar = withStyles({
-    root: {
-        display: 'flex',
-        justifyContent: 'space-between'
-    }
-
-})(AppBar)*/
-
-/*const StyledTab = withStyles({
-    selected: {
-        backgroundColor: "#fff"
-    },
-    root: {
-        width: '183px',
-        borderRadius: '5px 5px  0 0',
-        
-    }
-})(Tab)*/
-
-/*const StyledTabs = withStyles({
-    root: {
-        backgroundColor: '#DEE4EB',
-    },
-    flexContainer: {
-        justifyContent: "space-between"
-    }
-})(Tabs)*/
-
 
 export default function SimpleTabs() {
     const classes = useStyles();

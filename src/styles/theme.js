@@ -46,7 +46,7 @@ export default createMuiTheme({
         },
         MuiAppBar: {
             colorPrimary: {
-                backgroundColor: '#F0F4F9'
+                backgroundColor: 'transparent'
             }
         },
         MuiTab:{
