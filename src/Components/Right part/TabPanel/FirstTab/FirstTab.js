@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './FirstTab.module.css';
-import SimpleSlider from './Slider/Slider';
-import SelectComp from './SelectComp/SelectComp';
-import InputComp from './InputComp/InputComp';
-import CheckBoxComp from './CheckBoxComp/CheckBoxComp'
-import TextareaComp from './TextareaComp/TextareaComp'
+import SimpleSlider from '../../../Common/Slider/Slider';
+import SelectComp from '../../../Common/SelectComp/SelectComp';
+import InputComp from '../../../Common/InputComp/InputComp';
+import CheckBoxComp from '../../../Common/CheckBoxComp/CheckBoxComp'
+import TextareaComp from '../../../Common/TextareaComp/TextareaComp'
 
 
 const FirstTab = () => {
@@ -65,7 +65,7 @@ const FirstTab = () => {
                 <CheckBoxComp />
                 <div className={style.text}>תונולח</div>
             </div>
-            <TextareaComp text='.סעבשי גיתל ?קרוב םגרומ יכתל - המשה םשתס ונכל דעתסו ךנברת .שמגמ ימרוגב ,ףחנומ קרוצ תחלו טיארב .קגלוס םביל '/>
+            <TextareaComp text='.סעבשי גיתל ?קרוב םגרומ יכתל - המשה םשתס ונכל דעתסו ךנברת .שמגמ ימרוגב ,ףחנומ קרוצ תחלו טיארב .קגלוס םביל ' />
             <InputComp mainLabel='(KW 0.1) למשח' value='' />
             <InputComp mainLabel='ריווא גוזימ' value='גוזימה ןנכתמ תטלחה י"פע' />
 

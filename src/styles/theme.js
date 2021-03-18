@@ -57,7 +57,11 @@ export default createMuiTheme({
                 '&.Mui-selected':{
                     backgroundColor: '#FFF',
                     color:'#54585E'
+                },
+                '@media (min-width: 600px)':{
+                    minWidth:'138px'
                 }
+                
             },
             textColorInherit:{
                 color: '#939CAA',
@@ -70,6 +74,34 @@ export default createMuiTheme({
             labelIcon:{
                 minHeight: 'none'
             }
-        }
+        },
+        MuiPaper:{
+            elevation1:{
+                boxShadow: 'none'
+            },
+            root:{
+                backgroundColor: 'transparent'
+            }
+        },
+        MuiAccordionSummary:{
+            content:{
+                flexGrow:0,
+                flexDirection: 'column',
+            },
+            root:{
+                justifyContent:'flex-end',
+                flexDirection: 'row-reverse',
+                '&.Mui-expanded':{
+                    minHeight: '40px'
+                }
+            }
+        },
+        MuiAccordionDetails:{
+            root:{
+                padding: 0
+            }
+        },
+        
+
     }
 })
