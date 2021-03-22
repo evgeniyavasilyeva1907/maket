@@ -41,10 +41,10 @@ export default function SimpleTabs() {
                     <Tab label="תורעהו םינקת" icon={<PowerOutlinedIcon />} {...a11yProps(1)} />
                 </Tabs>
             </AppBar>
-            <TabPanel value={value} index={0}>
+            <TabPanel value={value} index={0} paddingBottom={5}>
                 <FirstTab />
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={1} paddingBottom={5}>
                 Item Two
             </TabPanel>
         </div>

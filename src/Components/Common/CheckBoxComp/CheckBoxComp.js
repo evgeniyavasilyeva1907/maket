@@ -22,8 +22,10 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-function CheckBoxComp() {
-    const classes = useStyles();
+
+function CheckBoxComp(props) {
+    const {className, color} = props
+    const classes = useStyles({color});
     return (
         <Checkbox style={{ fontSize: 32 }}
             checkedIcon={<CheckIcon classes={{ root: classes.iconChecked }} />}

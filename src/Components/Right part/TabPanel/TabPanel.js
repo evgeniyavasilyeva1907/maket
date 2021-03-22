@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function TabPanel(props) {
-    const { children, value, index, ...other } = props;
+    const { children, value, index, paddingBottom, ...other } = props;
 
     return (
         <div
@@ -13,7 +13,7 @@ function TabPanel(props) {
             {...other}
         >
             {value === index && (
-                <div style={{ backgroundColor: '#fff', paddingBottom: '15px', borderRadius: '0 0 5px 5px' }}>
+                <div style={{ backgroundColor: '#fff', borderRadius: '0 0 5px 5px', paddingBottom:`${paddingBottom}px` }}>
                     {children}
                 </div>
             )}

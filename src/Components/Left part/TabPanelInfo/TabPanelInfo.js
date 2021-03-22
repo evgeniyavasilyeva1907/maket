@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import InfoContent from '../InfoContent/InfoContent'
 
 function a11yProps(index) {
     return {
@@ -56,10 +57,10 @@ export default function TabPanelInfo() {
                     <Tab label='הנוכמ ףדל הבחרה' {...a11yProps(6)} className={classes.button} />
                 </Tabs>
             </AppBar>
-            <TabPanel value={value} index={0}>
-
+            <TabPanel value={value} index={0} paddingBottom={25}>
+                <InfoContent/>
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={1} paddingBottom={25}>
                 Item Two
             </TabPanel>
         </div>

@@ -1,13 +1,26 @@
 import React from 'react';
-import style from './InputComp.module.css'
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    input: {
+        border: '1px solid #E7EAEE',
+        height: '32px',
+        borderRadius: '5px',
+        color: '#1F2022',
+        fontFamily: '"Arimo", sans-serif',
+        fontSize: '14px',
+        outline: 'none',
+        paddingRight: '10px'
+    }
+}))
 
 function InputComp(props) {
-    const {mainLabel, value}=props
+    const classes = useStyles()
+    const { value, className } = props
     return (
-        <div className={style.inputStyle}>
-            <div className={style.text}>{mainLabel}</div>
-            <div> <input defaultValue={value}></input></div>
-        </div>
+        
+            <input className={[classes.input,className].join(' ')} defaultValue={value}></input>
+        
     )
 }
 

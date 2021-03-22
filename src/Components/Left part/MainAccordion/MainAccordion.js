@@ -4,7 +4,8 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import InternalAccordion from '../InternalAccordion/InternalAccordion'
+import InternalAccordion from '../InternalAccordion/InternalAccordion';
+import MenuButton from '../../Common/MenuButton/MenuButton'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,7 +15,10 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: '"Arimo", sans-serif',
     fontSize: '14px',
     fontWeight: 'bold',
-    color:'#54585E'
+    color:'#54585E',
+    display: 'flex',
+    flexDirection:'row',
+    alignItems:'center'
   },
   subtitle:{
     fontFamily: '"Arimo", sans-serif',
@@ -43,13 +47,14 @@ export default function SimpleAccordion(props) {
 
   return (
     <div className={classes.root}>
-      <Accordion>
+      <Accordion TransitionProps={{ unmountOnExit: true }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <div className={classes.heading}>{heading}</div>
+          <div className={classes.heading}   onClick={(event) => event.stopPropagation()}> {heading}  <MenuButton/></div>
           <div className={classes.subtitle}>{subtitle}</div>
         </AccordionSummary>
         <AccordionDetails>

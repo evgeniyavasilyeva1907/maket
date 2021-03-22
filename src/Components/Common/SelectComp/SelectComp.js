@@ -1,18 +1,30 @@
 import React from 'react';
-import style from '../SelectComp/Select.module.css'
+import { makeStyles } from '@material-ui/core/styles';
 
-function SelectComp (props) {
-  const   {mainLabel, firstText, secondText, thirdText} = props;
- return(
-    <div className={style.Selectstyle}>
-    <div className={style.text}> {mainLabel}</div>
-    <div>
-        <select defaultValue={firstText}>
-            <option defaultValue='first'> {firstText}</option>
-            <option defaultValue='second'>{secondText}</option>
-            <option defaultValue='third'> {thirdText}</option>
-        </select></div>
-</div>
- )
+const useStyles = makeStyles((theme)=>({
+    select: {
+        border: '1px solid #E7EAEE',
+        height: '32px',
+        borderRadius: '5px',
+        color: '#1F2022',
+        fontFamily: '"Arimo", sans-serif',
+        fontSize: '14px',
+        outline: 'none',
+        paddingRight: '10px'
+    }
+}))
+
+function SelectComp(props) {
+    const classes = useStyles()
+    const { options, className } = props;
+    return (
+            <select className={[classes.select,className].join(' ')} >
+                {options.map((option, index) => {
+                    return (
+                        <option defaultValue={option.label} key={index}>{option.text}</option>
+                    )
+                })}
+            </select>
+    )
 }
 export default SelectComp
