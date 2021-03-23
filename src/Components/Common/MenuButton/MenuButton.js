@@ -16,7 +16,7 @@ const ITEM_HEIGHT = 48;
 
 const useStyles = makeStyles((theme) => ({
   menu: {
-    left: '625px'
+    transform: 'translateX(-80%) !important'
   }
 }));
 
@@ -44,27 +44,33 @@ export default function LongMenu() {
       >
         <MoreVertIcon />
       </IconButton>
-      <Menu
-        id="long-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={open}
-        onClose={handleClose}
-        PaperProps={{
-          style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
-            width: '20ch',
-            transform: 'translateX(-80%)'
-          },
-        }}
-      >
-        {options.map((option) => (
-          <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}
-          >
-            {option}
-          </MenuItem>
-        ))}
-      </Menu>
+      
+        <Menu
+          classes={{
+            paper:
+              classes.menu
+          }}
+          id="long-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={open}
+          onClose={handleClose}
+          PaperProps={{
+            style: {
+              maxHeight: ITEM_HEIGHT * 4.5,
+              width: '20ch',
+            },
+          }}
+        >
+          {options.map((option) => (
+            <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}
+            >
+              {option}
+            </MenuItem>
+          ))}
+        </Menu>
+      
+
     </div>
   );
 }

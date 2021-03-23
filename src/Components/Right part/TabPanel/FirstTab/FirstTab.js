@@ -18,13 +18,21 @@ const useStyles = makeStyles((theme) => ({
         width: '198px'
     },
     label: {
-        margin: '10px '
+        margin: '10px 0 10px 0'
     },
     selectWithTextarea: {
         borderTop: '1px solid #E7EAEE',
     },
     textarea: {
-        height: '138px'
+        height: '138px',
+        width: '340px',
+        fontSize: '12px',
+
+    },
+    textareaWidth: {
+        width: '340px',
+        height: '48px',
+        fontSize: '12px',
     },
     slider: {
         border: '1px solid #E7EAEE',
@@ -40,8 +48,8 @@ const useStyles = makeStyles((theme) => ({
         display: ' flex',
         alignItems: 'center',
     },
-    labelCheck:{
-        marginRight:'15px'
+    labelCheck: {
+        marginRight: '15px'
     }
 }))
 
@@ -75,14 +83,14 @@ const FirstTab = () => {
             <InputPart text=' כ"א ארעי' value='3' />
             <InputPart text=' כ"א ממוצע' value='3' />
             <SelectPart text='סוג רצפה' options={[{ label: 'first', text: 'רגילה' }, { label: 'second', text: 'רגילה' }, { label: 'third', text: 'רגילה' }]} />
-            <TextareaComp text=' ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.' />
+            <TextareaComp className={classes.textareaWidth} text=' ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.' />
             <SelectPart text='סוג תקרה' options={[{ label: 'first', text: 'רגילה' }, { label: 'second', text: 'רגילה' }, { label: 'third', text: 'רגילה' }]} />
-            <TextareaComp text=' ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.' />
+            <TextareaComp className={classes.textareaWidth} text=' ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.' />
             <div className={classes.check} >
                 <CheckBoxComp />
-                <Label text='חלונות' className={classes.labelCheck}/>
+                <Label text='חלונות' className={classes.labelCheck} />
             </div>
-            <TextareaComp text='.סעבשי גיתל ?קרוב םגרומ יכתל - המשה םשתס ונכל דעתסו ךנברת .שמגמ ימרוגב ,ףחנומ קרוצ תחלו טיארב .קגלוס םביל ' />
+            <TextareaComp className={classes.textareaWidth} text='.סעבשי גיתל ?קרוב םגרומ יכתל - המשה םשתס ונכל דעתסו ךנברת .שמגמ ימרוגב ,ףחנומ קרוצ תחלו טיארב .קגלוס םביל ' />
             <InputPart text=' חשמל (KW 0.1)' value='' />
             <InputPart text='מיזוג אוויר' value='עפ"י החלטת מתכנן המיזוג' />
         </div>

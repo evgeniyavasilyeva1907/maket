@@ -38,6 +38,9 @@ const useStyles = makeStyles((theme) => ({
         position: 'absolute',
         top:'10%'
     }
+  },
+  button:{
+    transform:'none'
   }
 }));
 
@@ -54,7 +57,7 @@ export default function SimpleAccordion(props) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <div className={classes.heading}   onClick={(event) => event.stopPropagation()}> {heading}  <MenuButton/></div>
+          <div className={classes.heading}   onClick={(event) => event.stopPropagation()}> {heading}  <MenuButton className={classes.button}/></div>
           <div className={classes.subtitle}>{subtitle}</div>
         </AccordionSummary>
         <AccordionDetails>

@@ -32,7 +32,20 @@ const useStyles = makeStyles((theme) => ({
         borderLeft: '1px solid #E7EAEE',
         height: '47px',
         lineHeight: '15px'
-
+    },
+    firstButton:{
+        width: '138px',
+        borderTop: '1px solid #E7EAEE',
+        borderLeft: '1px solid #E7EAEE',
+        height: '47px',
+        lineHeight: '15px'
+    },
+    lastButton:{
+        width: '138px',
+        borderTop: '1px solid #E7EAEE',
+        borderRight: '1px solid #E7EAEE',
+        height: '47px',
+        lineHeight: '15px'
     }
 }));
 
@@ -48,19 +61,19 @@ export default function TabPanelInfo() {
 
             <AppBar position="static" elevation={0}>
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" TabIndicatorProps={{ style: { background: "none" } }}>
-                    <Tab label="יללכ"   {...a11yProps(0)} className={classes.button} />
+                    <Tab label="יללכ"   {...a11yProps(0)} className={classes.firstButton} />
                     <Tab label='למשח' {...a11yProps(1)} className={classes.button} />
                     <Tab label='למשח' {...a11yProps(2)} className={classes.button} />
                     <Tab label='ריווא גוזימ' {...a11yProps(3)} className={classes.button} />
                     <Tab label='ירוביחו היצלטסניא תרנצ ' {...a11yProps(4)} className={classes.button} />
                     <Tab label=' םייללכ םינותנ' {...a11yProps(5)} className={classes.button} />
-                    <Tab label='הנוכמ ףדל הבחרה' {...a11yProps(6)} className={classes.button} />
+                    <Tab label='הנוכמ ףדל הבחרה' {...a11yProps(6)} className={classes.lastButton} />
                 </Tabs>
             </AppBar>
-            <TabPanel value={value} index={0} paddingBottom={25}>
+            <TabPanel value={value} index={0} >
                 <InfoContent/>
             </TabPanel>
-            <TabPanel value={value} index={1} paddingBottom={25}>
+            <TabPanel value={value} index={1} >
                 Item Two
             </TabPanel>
         </div>

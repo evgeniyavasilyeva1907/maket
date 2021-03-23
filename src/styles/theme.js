@@ -36,7 +36,7 @@ export default createMuiTheme({
             }
         },
         MuiTabs: {
-            root:{
+            root: {
                 height: '40px'
             },
 
@@ -49,59 +49,62 @@ export default createMuiTheme({
                 backgroundColor: 'transparent'
             }
         },
-        MuiTab:{
-            root:{
+        MuiTab: {
+            root: {
                 backgroundColor: '#DEE4EB',
-                width:"183px",
-                borderRadius:'5px 5px 0 0',
-                '&.Mui-selected':{
+                width: "183px",
+                borderRadius: '5px 5px 0 0',
+                '&.Mui-selected': {
                     backgroundColor: '#FFF',
-                    color:'#54585E'
+                    color: '#54585E'
                 },
-                '@media (min-width: 600px)':{
-                    minWidth:'138px'
+                '@media (min-width: 600px)': {
+                    minWidth: '138px'
                 }
-                
+
             },
-            textColorInherit:{
+            textColorInherit: {
                 color: '#939CAA',
                 opacity: 1
             },
-            wrapper:{
+            wrapper: {
                 display: 'flex',
                 flexDirection: 'row'
             },
-            labelIcon:{
+            labelIcon: {
                 minHeight: 'none'
             }
         },
-        MuiPaper:{
-            elevation1:{
+        MuiPaper: {
+            elevation1: {
                 boxShadow: 'none'
             },
-            root:{
+            root: {
                 backgroundColor: 'transparent'
             }
         },
-        MuiAccordionSummary:{
-            content:{
-                flexGrow:0,
+        MuiAccordionSummary: {
+            content: {
+                flexGrow: 0,
                 flexDirection: 'column',
-            },
-            root:{
-                justifyContent:'flex-end',
-                flexDirection: 'row-reverse',
-                '&.Mui-expanded':{
-                    minHeight: '40px'
+                '&.Mui-expanded': {
+                    margin: '12px 0px'
                 }
+            },
+            root: {
+                justifyContent: 'flex-end',
+                flexDirection: 'row-reverse',
+                '&.Mui-expanded': {
+                    minHeight: '40px'
+                },
             }
         },
-        MuiAccordionDetails:{
-            root:{
+        MuiAccordionDetails: {
+            root: {
                 padding: 0
             }
         },
-        
+
 
     }
 })
