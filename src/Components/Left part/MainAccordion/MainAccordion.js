@@ -15,37 +15,35 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: '"Arimo", sans-serif',
     fontSize: '14px',
     fontWeight: 'bold',
-    color:'#54585E',
+    color: '#54585E',
     display: 'flex',
-    flexDirection:'row',
-    alignItems:'center'
+    flexDirection: 'row',
+    alignItems: 'center'
   },
-  subtitle:{
+  subtitle: {
     fontFamily: '"Arimo", sans-serif',
     fontSize: '12px',
     fontWeight: 'bold',
     color: '#1F2022',
     position: 'relative',
-    "&::after":{
-        content: "''",
-        border: '1px solid #F89C13',
-        borderRadius: '50%',
-        backgroundColor: '#F89C13',
-        display: 'inline-block',
-        width: '10px',
-        height: '10px',
-        marginRight: '5px',
-        position: 'absolute',
-        top:'10%'
+    "&::after": {
+      content: "''",
+      border: '1px solid #F89C13',
+      borderRadius: '50%',
+      backgroundColor: '#F89C13',
+      display: 'inline-block',
+      width: '10px',
+      height: '10px',
+      marginRight: '5px',
+      position: 'absolute',
+      top: '50%',
+      transform: 'translateY(-50%)'
     }
-  },
-  button:{
-    transform:'none'
   }
 }));
 
 export default function SimpleAccordion(props) {
-  const {heading, subtitle} = props;
+  const { heading, subtitle } = props;
   const classes = useStyles();
 
   return (
@@ -57,15 +55,16 @@ export default function SimpleAccordion(props) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <div className={classes.heading}   onClick={(event) => event.stopPropagation()}> {heading}  <MenuButton className={classes.button}/></div>
+          <div className={classes.heading} onClick={(event) => event.stopPropagation()}> {heading}
+            <MenuButton /></div>
           <div className={classes.subtitle}>{subtitle}</div>
         </AccordionSummary>
         <AccordionDetails>
-          <InternalAccordion/>
+          <InternalAccordion />
         </AccordionDetails>
       </Accordion>
- 
-     
+
+
     </div>
   );
 }

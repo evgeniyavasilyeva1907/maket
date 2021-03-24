@@ -15,13 +15,9 @@ const options = [
 const ITEM_HEIGHT = 48;
 
 const useStyles = makeStyles((theme) => ({
-  menu: {
-    transform: 'translateX(-80%) !important',
-  },
+
   button:{
     transform: 'none',
-    borderRadius: '50%',
-    backgroundColor: '#fff',
     width: ' 20px',
     height: ' 20px',
     marginRight: ' 10px'
@@ -59,10 +55,6 @@ export default function LongMenu() {
       </IconButton>
       
         <Menu
-          classes={{
-            paper:
-              classes.menu
-          }}
           id="long-menu"
           anchorEl={anchorEl}
           keepMounted
@@ -72,7 +64,7 @@ export default function LongMenu() {
             style: {
               maxHeight: ITEM_HEIGHT * 4.5,
               width: '20ch',
-              backgroundColor: '#fff'
+              backgroundColor:'#fff'
             },
           }}
         >

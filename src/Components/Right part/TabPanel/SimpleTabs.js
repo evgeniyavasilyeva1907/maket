@@ -45,7 +45,7 @@ export default function SimpleTabs() {
                 <FirstTab />
             </TabPanel>
             <TabPanel value={value} index={1} paddingBottom={5}>
-                Item Two
+
             </TabPanel>
         </div>
     );

@@ -1,11 +1,11 @@
 import React from 'react';
-import Slider from '../../Common/Slider/Slider';
+import Slider from '../../../Common/Slider/Slider';
 import { makeStyles } from '@material-ui/core/styles';
-import item from '../../../img/item.png';
-import Label from '../../Common/Label/Label';
-import SelectComp from '../../Common/SelectComp/SelectComp';
-import InputComp from '../../Common/InputComp/InputComp';
-import TextareaComp from '../../Common/TextareaComp/TextareaComp'
+import item from '../../../../img/item.png';
+import Label from '../../../Common/Label/Label';
+import SelectComp from '../../../Common/SelectComp/SelectComp';
+import InputComp from '../../../Common/InputComp/InputComp';
+import TextareaComp from '../../../Common/TextareaComp/TextareaComp'
 
 const useStyles = makeStyles((theme) => ({
     content: {

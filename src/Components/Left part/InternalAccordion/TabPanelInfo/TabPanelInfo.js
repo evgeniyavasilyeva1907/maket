@@ -1,4 +1,4 @@
-import TabPanel from '../../Right part/TabPanel/TabPanel'
+import TabPanel from '../../../Right part/TabPanel/TabPanel'
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
         borderLeft: '1px solid #E7EAEE',
         borderBottom: '1px solid #E7EAEE',
         borderRadius: '5px',
-        marginBottom: '20px',
     },
     elevation4: {
         boxShadow: 'none'

@@ -80,15 +80,17 @@ export default createMuiTheme({
                 boxShadow: 'none'
             },
             root: {
-                backgroundColor: 'transparent'
+                backgroundColor: 'transparent',
             }
         },
         MuiAccordionSummary: {
             content: {
                 flexGrow: 0,
                 flexDirection: 'column',
+                width:"100%",
                 '&.Mui-expanded': {
-                    margin: '12px 0px'
+                    margin: '12px 0px',
+                    width:"100%"
                 }
             },
             root: {
@@ -104,7 +106,17 @@ export default createMuiTheme({
                 padding: 0
             }
         },
-
+        MuiAccordion:{
+            root:{
+                '&::before':{
+                    backgroundColor: 'transparent',
+                    
+                },
+                '&.Mui-expanded': {
+                    margin: '5px 0'
+                },
+            }
+        }
 
     }
 })
